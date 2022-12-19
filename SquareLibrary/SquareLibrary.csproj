@@ -7,4 +7,10 @@
     <RootNamespace>Splatrika.SquareLibrary</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Abstractions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstractions\" />
+  </ItemGroup>
 </Project>
