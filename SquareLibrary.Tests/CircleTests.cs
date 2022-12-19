@@ -30,7 +30,7 @@ public class CircleTests
         var circle = new Circle(radius);
         var square = circle.CalculateSquare();
 
-        Assert.Equal(exceptedSquare, square, 5);
+        Assert.Equal(exceptedSquare, square, Constants.Precision);
     }
 }
 
