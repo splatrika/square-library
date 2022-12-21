@@ -14,8 +14,9 @@ public class TriangleTests
 
 
     [Theory]
-    [InlineData(2, 2, 2)]
-    [InlineData(3, 4, 5.5)]
+    [InlineData(0, 2, 2)]
+    [InlineData(3, -1, 5.5)]
+    [InlineData(3, 1, -5.5)]
     public void CreateWithInvalidEdges(double a, double b, double c)
     {
         Assert.Throws<ArgumentException>(() => new Triangle(a, b, c));
@@ -25,6 +26,7 @@ public class TriangleTests
     [Theory]
     [InlineData(2, 2, 2.8284271247, 2)]
     [InlineData(3, 4, 5, 6)]
+    [InlineData(3, 4, 2, 2.90473750966)]
     public void CalculateSquare(double a, double b, double c,
         double exceptedSquare)
     {
